@@ -10,3 +10,7 @@ export class UsersRepository extends Repository<User> {
     await this.save(user);
   }
 }
+
+export enum UserErrors {
+  USERNAME_ALREADY_EXISTS = '23505',
+}
